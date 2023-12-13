@@ -1,5 +1,5 @@
 FROM gcc
-COPY hello.c /app/hello.c
+COPY name.c /app/name.c
 WORKDIR /app
-RUN gcc -o hello hello.c
-CMD ["./hello"]
+RUN gcc -o name name.c
+CMD ["./name"]
